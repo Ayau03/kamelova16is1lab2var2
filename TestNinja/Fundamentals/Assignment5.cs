@@ -10,12 +10,12 @@ namespace TestNinja.Fundamentals
     {
         public int Result { get; set; }
 
-        public int DivideNumbers(int a, int b)
+        DateTime date1 = new DateTime();
+        public void SetDate(int y, int m, int d, int h, int mm, int s)  //данный метод принимает аргументы для установления даты
         {
-            if (b == 0) throw new DivideByZeroException();
+            if (h > 24) throw new ArgumentException(); //если аргумент h, который устанавливает часы, больше 24, то вызывается исключение
 
-            Result =  a / b;
-            return Result;
+            date1 = new DateTime(y, m, d, h, mm, s);
         }
     }
 }

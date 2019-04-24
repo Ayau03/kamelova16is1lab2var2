@@ -8,12 +8,12 @@ namespace TestNinja.Fundamentals
 {
    public class Assignment3
     {
-        public ActionResults GetDay(string day)
+        public ActionResults GetDay(string day)  //функция, которая проверяет дни недели
         {
-            if (day == "saturday" || day == "sunday")
+            if (day == "saturday" || day == "sunday") //если аргумент Суббота или Воскресенье, то возвращается функция Выходные
                 return new Weekends();
 
-            return new Weekdays();
+            return new Weekdays(); //иначе возвращается Будни
         }
     }
     public class ActionResults

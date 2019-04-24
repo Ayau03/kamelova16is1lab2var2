@@ -8,11 +8,11 @@ namespace TestNinja.Fundamentals
 {
     public  class Assignment4
     {
-        public string TypeOfTicket { get; set; }
-        public void AgeOfPeople(int a)
+        public string TypeOfTicket { get; set; } //объект тип билета
+        public void AgeOfPeople(int a) 
         {
-            if (a <= 15) TypeOfTicket = "детский";
-            else TypeOfTicket = "взрослый";
+            if (a <= 15) TypeOfTicket = "детский"; //если возраст меньше 15, то тип билета устанавливается Детский
+            else TypeOfTicket = "взрослый"; // иначе тип билета Взрослый
         }
     }
 }

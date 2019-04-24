@@ -14,12 +14,10 @@ namespace TestNinja.UnitTests
             test = new Assignment5();
         }
         [Test]
-        [TestCase(6, 0)]
-        public void DivideNumbers_InvalidArgumentB_ThrowDividedByZeroException(int a, int b)
+        [TestCase(2015, 7, 20, 25, 30, 25)]
+        public void SetDate_InvalidArgumenth_ThrowArgumentException(int y, int m, int d, int h, int mm, int s)
         {
-            test.DivideNumbers(a, b);
-
-           // Assert.That(() => test.DivideNumbers(a, b), Throws.Exception.TypeOf<DivideByZeroException>);
+            Assert.That(() => test.SetDate(y, m, d, h, mm, s), Throws.ArgumentException);
 
         }
     }
